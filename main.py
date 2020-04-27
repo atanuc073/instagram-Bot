@@ -21,8 +21,9 @@ def main():
     l.signin()
     driver.get('https://www.instagram.com/python.learning/')
     gp=get_pages.Getpages(driver)
+    print(gp.get_num_flw())
     gp.get_followers()
-
+    
 
 if __name__ == "__main__":
     main()
